@@ -42,3 +42,29 @@ IngressosNet é um aplicativo de comércio eletrônico desenvolvido com ASP.NET 
 1. Clone o repositório:
    ```sh
    git clone https://github.com/etrupja/complete-ecommerce-aspnet-mvc-application.git
+2. Navegue até o diretório do projeto:
+   ```sh
+   cd complete-ecommerce-aspnet-mvc-application
+3. Restaure as dependências do projeto:
+   ```sh
+   dotnet restore
+4. Atualize o banco de dados:
+   ```sh
+   dotnet ef database update
+5. Execute o aplicativo:
+   ```sh
+   dotnet run
+
+## Contato
+
+Se você tiver alguma dúvida ou sugestão, sinta-se à vontade para entrar em contato:
+
+[E-mail](danilo.silva@msn.com)
+
+[LinkedIn](https://www.linkedin.com/in/ddcsilva/)
+
+---
+
+Este projeto faz parte do meu portfólio pessoal, demonstrando minhas habilidades em desenvolvimento de aplicações web com ASP.NET MVC e outras tecnologias. Fique à vontade para explorar o código e utilizá-lo como referência para seus próprios projetos.
+
+
