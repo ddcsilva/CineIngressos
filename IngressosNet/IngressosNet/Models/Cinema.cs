@@ -1,10 +1,11 @@
 ﻿namespace IngressosNet.Models;
 
-public class Cinema
+public class Cinema : Entity
 {
-    public int Id { get; set; }
-
     public string Logo { get; set; } = string.Empty;    
     public string Nome { get; set; } = string.Empty;
     public string Descricao { get; set; } = string.Empty;
+
+    // Relacionamentos
+    public List<Filme> Filmes { get; set; } = [];
 }
