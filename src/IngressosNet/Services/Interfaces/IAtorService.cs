@@ -4,9 +4,9 @@ namespace IngressosNet.Services.Interfaces;
 
 public interface IAtorService
 {
-    IEnumerable<Ator> ObterTodos();
-    Ator ObterPorId(int id);
-    void Adicionar(Ator ator);
-    Ator Atualizar(int id, Ator novoAtor);
-    void Remover(int id);
+    Task<IEnumerable<Ator>> ObterTodosAsync();
+    Task<Ator?> ObterPorIdAsync(int id);
+    Task AdicionarAsync(Ator ator);
+    Task<Ator> AtualizarAsync(int id, Ator novoAtor);
+    Task RemoverAsync(int id);
 }

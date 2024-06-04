@@ -1,11 +1,15 @@
 using eTickets.Data;
 using IngressosNet.Data;
+using IngressosNet.Services;
+using IngressosNet.Services.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddDbContext<IngressosNetContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("IngressosNetConnection")));
+
+builder.Services.AddScoped<IAtorService, AtorService>();
 
 builder.Services.AddControllersWithViews();
 
