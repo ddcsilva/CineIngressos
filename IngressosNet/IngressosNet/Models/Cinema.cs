@@ -1,9 +1,16 @@
-﻿namespace IngressosNet.Models;
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace IngressosNet.Models;
 
 public class Cinema : Entity
 {
-    public string Logo { get; set; } = string.Empty;    
+    [Display(Name = "Logo")]
+    public string Logo { get; set; } = string.Empty;
+
+    [Display(Name = "Nome")]
     public string Nome { get; set; } = string.Empty;
+
+    [Display(Name = "Descrição")]
     public string Descricao { get; set; } = string.Empty;
 
     // Relacionamentos
