@@ -1,3 +1,4 @@
+using eTickets.Data;
 using IngressosNet.Data;
 using Microsoft.EntityFrameworkCore;
 
@@ -26,5 +27,8 @@ app.UseAuthorization();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
+
+// Seed Database
+AppDbInitializer.Seed(app);
 
 app.Run();
