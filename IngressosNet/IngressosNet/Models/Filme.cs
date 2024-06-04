@@ -2,7 +2,7 @@
 
 namespace IngressosNet.Models;
 
-public class Filme : Entity
+public sealed class Filme : Entity
 {
     public string Nome { get; set; } = string.Empty;
     public string Sinopse { get; set; } = string.Empty;

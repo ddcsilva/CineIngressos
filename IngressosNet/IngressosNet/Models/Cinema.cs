@@ -2,7 +2,7 @@
 
 namespace IngressosNet.Models;
 
-public class Cinema : Entity
+public sealed class Cinema : Entity
 {
     [Display(Name = "Logo")]
     public string Logo { get; set; } = string.Empty;
